@@ -1,0 +1,144 @@
+body {
+    background-color: #0CC2E8;
+}
+
+body h2 {
+    text-align: center;
+}
+
+div#eve {
+    background-color: #0C8EF2;
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    border: 5px solid #0C8EF2;
+    box-shadow: 3px 3px 6px white;
+}
+
+div p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+header > H1, header > h2 {
+    text-align: center;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+nav ul li:hover a {
+    color: white;
+}
+
+nav > ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    background-color: #0C14F2;
+    padding: 10px;
+    box-shadow: 3px 3px 6px black;
+    transition: all 0.5s;
+}
+
+nav ul li:hover {
+    background-color: #0CC2E8;
+    color: white;
+}
+
+main {
+    min-width: 200px;
+    max-width: 300px;
+    border-right: 5px solid blue;
+    padding: 10px;
+}
+
+figure {
+    position: relative;
+}
+
+figure img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    border: 5px solid #0C8EF2;
+    box-shadow: 3px 3px 6px black;
+}
+
+figure figcaption {
+    position: absolute;
+    text-align: center;
+    line-height: 35px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    text-shadow: 3px 3px 6px black;
+    color: white;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+figure figcaption:hover {
+    opacity: 1;
+}
+
+table {
+    margin: auto;
+    border: 3px solid blue;
+    border-spacing: 0px;
+    width: 300px;
+}
+
+table caption {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+table tr td {
+    border: 3px solid blue;
+    padding: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table tr td.lef {
+    vertical-align: top;
+    text-align: right;
+    background-color: blue;
+    color: white;
+}
+
+table tr td.rig {
+    vertical-align: top;
+    text-align: left;
+    background-color: #0CC2E8;
+}
+
+table tr td#alo {
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+}
+
+/* Below an aside */
+
+aside {
+    position: absolute;
+    float: right;
+    min-width: 200px;
+    max-width: 300px;
+    top: 178px;
+    left: 340px;
+}

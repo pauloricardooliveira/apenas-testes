@@ -142,3 +142,12 @@ aside {
     top: 178px;
     left: 340px;
 }
+
+/* below foto menu */
+
+img#fotoMenu {
+    width: 100px;
+    height: 80px;
+    float: right;
+    margin-top: -180px;
+}

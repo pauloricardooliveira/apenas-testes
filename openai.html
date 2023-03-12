@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>openAI</title>
+    <link rel="stylesheet" href="openai.css">
+    <script>
+        function trocaFoto(mudar) {
+            document.getElementById('fotoMenu').src = mudar
+        }
+    </script>
+</head>
+<body>
+    <div id="eve">
+        <header>
+            <h1>History of Elon Musk</h1>
+            <h2>The most important person of the century</h2>
+        </header>
+        <nav>
+            <ul>
+                <li onmouseover="trocaFoto('elonmusk.jpg')"><a href="mybrandnewsite.html" onmouseout="trocaFoto('OpenAI.png')">Elon Musk</a></li>
+                <li onmouseover="trocaFoto('Tesla.jpg')" onmouseout="trocaFoto('OpenAI.png')"><a href="tesla.html">Tesla</a></li>
+                <li onmouseover="trocaFoto('openAI.png')" onmouseout="trocaFoto('OpenAI.png')"><a href="openai.html">Open IA</a></li>
+                <li onmouseover="trocaFoto('SpaceX.jpg')" onmouseout="trocaFoto('OpenAI.png')"><a href="spacex.html">SpaceX</a></li>
+            </ul>
+        </nav>
+        <img id="fotoMenu" src="OpenAI.png" alt="">
+        <h2>These are my photos</h2>
+        <ul id="album">
+            <li id="photo1"><span>Photo 1</span></li>
+            <li id="photo2"><span>Photo 2</span></li>
+            <li id="photo3"><span>Photo 3</span></li>
+            <li id="photo4"><span>Photo 4</span></li>
+        </ul>
+    </div>
+    
+</body>
+</html>

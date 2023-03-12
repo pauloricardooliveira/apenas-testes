@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+    <link rel="stylesheet" href="spacex.css">
+</head>
+<body>
+    <script>
+        function trocaFoto(mudar) {
+            document.getElementById('fotoMenu').src = mudar
+        }
+        function calcular() {
+            var quantidade = Number(document.getElementById('tqua').value)
+            var total = 1500 * quantidade
+            document.getElementById('ttot').value = total
+        }
+    </script>
+<div id="eve">
+        <header>
+            <h1>History of Elon Musk</h1>
+            <h2>The most important person of the century</h2>
+        </header>
+        <nav>
+            <ul>
+                <li onmouseover="trocaFoto('elonmusk.jpg')"><a href="mybrandnewsite.html" onmouseout="trocaFoto('SpaceX.jpg')">Elon Musk</a></li>
+                <li onmouseover="trocaFoto('Tesla.jpg')" onmouseout="trocaFoto('SpaceX.jpg')"><a href="tesla.html">Tesla</a></li>
+                <li onmouseover="trocaFoto('openAI.png')" onmouseout="trocaFoto('SpaceX.jpg')"><a href="openai.html">Open IA</a></li>
+                <li onmouseover="trocaFoto('SpaceX.jpg')" onmouseout="trocaFoto('SpaceX.jpg')"><a href="spacex.html">SpaceX</a></li>
+            </ul>
+        </nav>
+        <img id="fotoMenu" src="SpaceX.jpg" alt="">
+        <form action="paulo900@yahoo.com.br" method="post" oninput="calcular()">
+            <fieldset>
+                <legend>User identity</legend>
+                <p><label for="tnom">Nome:</label> <input type="text" name="cnom" id="tnom" size="20" maxlength="40" placeholder="Nome Completo"></p>
+                <p><label for="tsen">Senha:</label> <input type="password" name="csen" id="tsen" size="10px" maxlength="8" placeholder="8 dígitos"></p>
+                <p><label for="teme">Email:</label> <input type="email" name="ceme" id="teme" maxlength="20" size="20" placeholder="exemplo@gmail.com"></p>
+                <fieldset>
+                    <legend>Sex:</legend>
+                    <p><input type="radio" name="csex" id="fsex" checked><label for="fsex">Feminino</label></p>
+                    <p><input type="radio" name="csex" id="msex"><label for="msex">Masculino</label></p>
+                </fieldset>
+                <p><label for="tdata">Data de nascimento:</label> <input type="date" name="cdata" id="tdata"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Endereço</legend>
+                <p><label for="trua">Rua:</label> <input type="text" name="crua" id="trua" placeholder="Apenas a rua"></p>
+                <p><label for="tnum">Número:</label> <input type="number" name="cnum" id="tnum" size="5" max="99999" placeholder="máximo 99.999"></p>
+                <p><label for="test">Estado:</label> 
+                    <select name="cest" id="test">
+                        <optgroup label="Sudeste">
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                        </optgroup>
+                        <optgroup label="Sul">
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>
+                    </select></p>
+                <p><label for="tcid">Cidade:</label> <input type="text" name="ccid" id="tcid" placeholder="Cidade"></p>
+            </fieldset>
+            <fieldset>
+                <legend>Mensagem do usuário</legend>
+                <p>Urgência: <input type="range" name="curg" id="turg"></p>
+                <p>Mensagem: <textarea name="cmen" id="tmen" cols="30" rows="5"></textarea></p>
+            </fieldset>
+            <fieldset>
+                <legend>Quero um Google Glass</legend>
+                <p><input type="checkbox" name="cbox" id="tbox" checked> Quero um Google Glass as soon as possible</p>
+                <p>Cor: <input type="color" name="ccor" id="tcor"></p>
+                <p>Quantidade: <input type="number" name="cqua" id="tqua" max="10"></p>
+                <p>Total a pagar: <input type="text" name="ctot" id="ttot" size="10" readonly></p>
+                <p><input type="button" value="Enviar"></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

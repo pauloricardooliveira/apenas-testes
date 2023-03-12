@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="stylesheet" href="tesla.css">
+    <script>
+        function trocaFoto(mudar) {
+            document.getElementById('fotoMenu').src = mudar
+        }
+    </script>
+</head>
+<body>
+    <div id="eve">
+        <header>
+            <h1>History of Elon Musk</h1>
+            <h2>The most important person of the century</h2>
+        </header>
+        <nav>
+            <ul>
+                <li onmouseover="trocaFoto('elonmusk.jpg')"><a href="mybrandnewsite.html" onmouseout="trocaFoto('Tesla.jpg')">Elon Musk</a></li>
+                <li onmouseover="trocaFoto('Tesla.jpg')" onmouseout="trocaFoto('Tesla.jpg')"><a href="#">Tesla</a></li>
+                <li onmouseover="trocaFoto('openAI.png')" onmouseout="trocaFoto('Tesla.jpg')"><a href="#">Open IA</a></li>
+                <li onmouseover="trocaFoto('SpaceX.jpg')" onmouseout="trocaFoto('Tesla.jpg')"><a href="#">SpaceX</a></li>
+            </ul>
+        </nav>
+        <img id="fotoMenu" src="Tesla.jpg" alt="">
+        <main>
+            <img id="bebe" src="bebemulher.jpg" alt="" usemap="#mymap">
+            <map name="mymap">               
+                <area shape="circle" coords="75,111,33" href="mybrandnewsite.html#musk" alt="" target="frame">
+                <area shape="rect" coords="110,244,188,289" href="mybrandnewsite.html#tab" alt="" target="frame">
+                <area shape="poly" coords="104,10,142,18,130,79,78,40" href="mybrandnewsite.html#vid" alt="" target="frame">
+            </map>
+            <iframe src="mybrandnewsite.html" frameborder="0" name="frame"></iframe>
+        </main>
+    </div>
+</body>
+</html>

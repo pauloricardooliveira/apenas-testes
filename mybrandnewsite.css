@@ -151,3 +151,9 @@ img#fotoMenu {
     float: right;
     margin-top: -180px;
 }
+
+/* below my scrollbar */
+
+::-webkit-scrollbar {
+    display: none;
+}
